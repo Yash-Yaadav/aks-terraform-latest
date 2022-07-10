@@ -4,7 +4,8 @@ pipeline {
     stages {
         stage('scm checkouto') {
             steps {
-                git branch: 'main', url: 'https://github.com/Yash-Yaadav/aks-terraform-latest.git'
+                //git branch: 'main', url: 'https://github.com/Yash-Yaadav/aks-terraform-latest.git'
+                git branch: 'main', url: 'git@github.com:Yash-Yaadav/aks-terraform-latest.git'
             }
         }
     stage ('Terraform init') {
